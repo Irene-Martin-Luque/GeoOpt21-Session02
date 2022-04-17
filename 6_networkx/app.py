@@ -27,7 +27,7 @@ hops = hs.Hops(app)
 def createGraph(X, Y, layout):
 
     G = geo.createGridGraph(X, Y)
-    GW = geo.addRandomWeigrhs(G)
+    GW = geo.addRandomWeigths(G)
 
     nodes = geo.getNodes(GW, layout)
     edges = geo.getEdges(GW, layout) 

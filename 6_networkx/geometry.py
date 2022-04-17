@@ -7,7 +7,7 @@ def createGridGraph(x, y):
     M = nx.grid_2d_graph(x,y)
     return M
 
-def addRandomWeigrhs(G):
+def addRandomWeigths(G):
 
     NG = nx.Graph()
     for u,v,data in G.edges(data=True):
