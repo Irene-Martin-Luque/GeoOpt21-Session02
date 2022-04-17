@@ -11,6 +11,7 @@ hops = hs.Hops(app)
     Hops Outputs should match the number of items that the functions returns 
 """
 
+# Template to build a component in Hops to exhange data from Python to Grasshopper ('Decoration')
 
 @hops.component(
     "/mycomponent",
@@ -20,7 +21,7 @@ hops = hs.Hops(app)
         hs.HopsInteger("Age", "A", "Provide your age")
     ],
     outputs=[
-       hs.HopsString("Text","T","Print name and age")
+       hs.HopsString("OutText","T","Print name and age")
     ]
 )
 def printNameAndAge(name, age):
