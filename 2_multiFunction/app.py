@@ -4,6 +4,8 @@ import ghhops_server as hs
 app = Flask(__name__)
 hops = hs.Hops(app)
 
+# Creating a first function (component)
+
 @hops.component(
     "/addition",
     name = "addition",
@@ -20,7 +22,7 @@ def addition(num1, num2):
     sum = num1 + num2
     return sum
 
-
+# Creating a second function (component)
 
 @hops.component(
     "/substraction",
