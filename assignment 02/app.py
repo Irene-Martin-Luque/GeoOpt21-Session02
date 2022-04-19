@@ -11,7 +11,7 @@ import geometry as geo
 app = Flask(__name__)
 hops = hs.Hops(app)
 
-#creating the Hops component
+#creating the workflow
 @hops.component(
     "/createStarGraph",
     name = "Create a Star Graph",
