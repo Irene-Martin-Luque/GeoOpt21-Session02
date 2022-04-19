@@ -1,16 +1,18 @@
+#AIA Module at MaCAD, IaaC, directed by David Andrés León
+#Session 02, Assinment 01 - GH to Python through Hops
+#Excercise by Irene Martín Luque based on template
+
+#importing flask and hops to create a workflow
 from flask import Flask
 import ghhops_server as hs
 
-#we also import random library to generate some randomness 
-import random as r
-
-#finally we bring rhino3dm to create rhino geometry in python
+#importing rhino3dm to create rhino geometry in python
 import rhino3dm as rg
 
 app = Flask(__name__)
 hops = hs.Hops(app)
 
-
+#creating the hops component
 @hops.component(
     "/extrudeCurve",
     name = "Extrude a Curve",
